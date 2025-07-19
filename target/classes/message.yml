@@ -1,0 +1,23 @@
+# 当消息为空时 则不向玩家发送此条消息
+give-success: "你已成功为 {target} 恢复了 {amount} 点生命值。"
+give-receive: "你的生命值被恢复了 {amount} 点。当前生命值: {health}/{max_health}"
+set-success: "你已将 {target} 的生命值设置为 {amount}。"
+set-receive: "你的生命值已被设置为 {amount}。当前生命值: {health}/{max_health}"
+error-player-not-found: "未找到玩家 {target}。"
+error-invalid-amount: "请输入有效的生命值数值。"
+error-exceed-max: "设置的生命值不能超过最大生命值 {max_health}。"
+
+error-no-permission: "你没有权限执行此操作。" 
+usage-playerhealth: |
+  &8[&ePlayerHealth&8]
+  &b/playerhealth give <玩家名> <数值> 恢复玩家生命
+  &b/playerhealth set <玩家名> <数值> 设置玩家生命值为指定值
+  &b/playerhealth reload 重载配置文件
+  &b/playerhealth parse <玩家名> <变量名> 解析变量
+usage-ph: |
+  &8[&ePlayerHealth&8]
+  &b/ph give <玩家名> <数值> 恢复玩家生命
+  &b/ph set <玩家名> <数值> 设置玩家生命值为指定值
+  &b/ph reload 重载配置文件
+  &b/ph parse <玩家名> <变量名> 解析变量
+reload-success: "&a插件已成功重载！"

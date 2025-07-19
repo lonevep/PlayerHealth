@@ -1,0 +1,13 @@
+name: PlayerHealth
+version: '1.1.1'
+main: io.github.lonevep.playerHealth.PlayerHealth
+api-version: '1.20'
+authors: [lone_vep]
+softdepend: [PlaceholderAPI]
+
+commands:
+  playerhealth:
+    description: 主指令，可用于恢复或设置玩家生命值
+    usage: /<command> <give|set|reload> <玩家名> <数值>
+    aliases: [ph]
+
